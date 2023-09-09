@@ -21,11 +21,20 @@ This study assessed the performance of QIIME 2 for analysis on both local cluste
 
 ## Getting Started
 
-Explain how to get started with your project. This section typically includes information on prerequisites and installation instructions.
+Performance data collection was conducted using the Vtune Command as follows:
+
+echo "uarch-exploration_c_01_ht-on_r1_240" vtune -c uarch-exploration -data-limit=0 -result-dir /home/vtune/uarch-exploration_c_01_ht_on_r1_240 -- python vtunes.py
+
+To change the number of processors according to whether it was MT (20) or HT (40), zero (0) was used to deactivate and one (1) to activate the option to change the number of cores:
+
+I. sudo bash -c 'echo 0 > /sys/devices/system/cpu/cpu(core number)/online'
+II. sudo bash -c 'echo 1 > /sys/devices/system/cpu/cpu(core number)/online'
+
+Finally, the following command was used to execute the SDE in the collection of the instruction histogram on-prem in the CICIMA cluster (Intel, 2023):
+
+I. path-to-kit/sde -mix -iform -- user-application [args]
 
 ### Prerequisites
-
-List any software, libraries, or dependencies that need to be installed before using your project.
 
 ```bash
 # Example:
