@@ -39,4 +39,5 @@ I. path-to-kit/sde -mix -iform -- user-application [args]
  - Intel VTUNE
  - AZURE Monitor
  - INTEL SDE Performance Tool
+ - Cluster / Cloud
 
