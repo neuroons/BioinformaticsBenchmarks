@@ -35,9 +35,8 @@ Finally, the following command was used to execute the SDE in the collection of 
 I. path-to-kit/sde -mix -iform -- user-application [args]
 
 ### Prerequisites
+# - Python
+# - Intel VTUNE
+# - AZURE Monitor
+# - INTEL SDE Performance Tool
 
-```bash
-# Example:
-# - Node.js 12+
-# - Python 3.6+
-# - etc.
