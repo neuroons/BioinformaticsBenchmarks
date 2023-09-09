@@ -1,7 +1,6 @@
 
 # Characterization of QIIME 2 with Intel Technology on-premises and in Microsoft Azure Cloud" 
 
-This study assessed the performance of QIIME 2 for DNA analysis on both local clusters and Microsoft Azure. It found that Intel multithreading was more efficient than hyperthreading, but efficiency dropped as the number of processors increased due to sequential tasks. These findings offer insights for resource optimization in cluster and cloud computing, especially for resource-intensive applications like metagenome analysis.
 
 ## Table of Contents
 
@@ -18,7 +17,7 @@ This study assessed the performance of QIIME 2 for DNA analysis on both local cl
 
 ## Description
 
-Provide a concise and clear description of your project. Explain what it does, its main features, and any other relevant information.
+This study assessed the performance of QIIME 2 for analysis on both local clusters and Microsoft Azure. It found that Intel multithreading was more efficient than hyperthreading, but efficiency dropped as the number of processors increased due to sequential tasks. These findings offer insights for resource optimization in cluster and cloud computing, especially for resource-intensive applications like metagenome analysis.
 
 ## Getting Started
 
