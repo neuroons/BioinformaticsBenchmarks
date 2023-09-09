@@ -1,6 +1,6 @@
 Date
 cores=1
-cd /home/evarela/Paper_final/
+cd /home/user/Paper_final/
 echo "Importe los datos de las secuencias a QIIME2"
 qiime tools import \
   --type 'SampleData[SequencesWithQuality]' \
@@ -29,7 +29,7 @@ echo "Filtre el feature table (Total-frequency-based filtering"
 qiime feature-table filter-samples \
   --i-table table.qza \
   --p-min-frequency 6000 \
-  --o-filtered-table /home/evarela/Paper_final/filtered-sequences/filtered-table.qza
+  --o-filtered-table /home/user/Paper_final/filtered-sequences/filtered-table.qza
 echo "Filtre características (features) con muy baja abundancia"
 qiime feature-table filter-features \
   --i-table filtered-sequences/filtered-table.qza \
@@ -37,7 +37,7 @@ qiime feature-table filter-features \
   --o-filtered-table filtered-sequences/feature-frequency-filtered-table.qza
 echo "Asigne taxonomía"
 qiime feature-classifier classify-sklearn \
-  --i-classifier /home/evarela/tutorial/gg-13-8-99-nb-classifier.qza \
+  --i-classifier /home/user/tutorial/gg-13-8-99-nb-classifier.qza \
   --i-reads rep-seqs.qza \
   --o-classification taxonomy.qza \
   --p-n-jobs -1
@@ -107,7 +107,7 @@ qiime feature-table summarize \
   --o-visualization filtered-sequences/filtered-table2.qzv \
   --m-sample-metadata-file sample-metadata_modified.tsv  
 echo "Genere las métricas de diversidad alfa y beta"
-rm -r -v /home/evarela/Paper_final/diversity-metrics-results/
+rm -r -v /home/user/Paper_final/diversity-metrics-results/
 qiime diversity core-metrics-phylogenetic \
   --i-phylogeny rooted-tree.qza \
   --i-table filtered-sequences/filtered-table2.qza \
@@ -145,7 +145,7 @@ qiime diversity alpha-rarefaction \
   --o-visualization alpha-rarefaction.qzv
 Date
 cores=1
-cd /home/evarela/Paper_final/
+cd /home/user/Paper_final/
 echo "Importe los datos de las secuencias a QIIME2"
 qiime tools import \
   --type 'SampleData[SequencesWithQuality]' \
@@ -174,7 +174,7 @@ echo "Filtre el feature table (Total-frequency-based filtering"
 qiime feature-table filter-samples \
   --i-table table.qza \
   --p-min-frequency 6000 \
-  --o-filtered-table /home/evarela/Paper_final/filtered-sequences/filtered-table.qza
+  --o-filtered-table /home/user/Paper_final/filtered-sequences/filtered-table.qza
 echo "Filtre características (features) con muy baja abundancia"
 qiime feature-table filter-features \
   --i-table filtered-sequences/filtered-table.qza \
@@ -182,7 +182,7 @@ qiime feature-table filter-features \
   --o-filtered-table filtered-sequences/feature-frequency-filtered-table.qza
 echo "Asigne taxonomía"
 qiime feature-classifier classify-sklearn \
-  --i-classifier /home/evarela/tutorial/gg-13-8-99-nb-classifier.qza \
+  --i-classifier /home/user/tutorial/gg-13-8-99-nb-classifier.qza \
   --i-reads rep-seqs.qza \
   --o-classification taxonomy.qza \
   --p-n-jobs -1
@@ -252,7 +252,7 @@ qiime feature-table summarize \
   --o-visualization filtered-sequences/filtered-table2.qzv \
   --m-sample-metadata-file sample-metadata_modified.tsv  
 echo "Genere las métricas de diversidad alfa y beta"
-rm -r -v /home/evarela/Paper_final/diversity-metrics-results/
+rm -r -v /home/user/Paper_final/diversity-metrics-results/
 qiime diversity core-metrics-phylogenetic \
   --i-phylogeny rooted-tree.qza \
   --i-table filtered-sequences/filtered-table2.qza \
