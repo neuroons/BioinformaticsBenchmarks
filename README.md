@@ -37,6 +37,9 @@ I. path-to-kit/sde -mix -iform -- user-application [args]
  - AZURE Monitor
  - INTEL SDE Performance Tool
  - Cluster / Cloud
+###License
+
+Public Domain Dedication
 
 ## Acknowledgments
 
