@@ -9,9 +9,6 @@
   - [Description](#description)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
@@ -40,4 +37,8 @@ I. path-to-kit/sde -mix -iform -- user-application [args]
  - AZURE Monitor
  - INTEL SDE Performance Tool
  - Cluster / Cloud
+
+## Acknowledgments
+
+This research was partially supported by a machine allocation from the CICIMA high-performance computer cluster at the University of Costa Rica. We also want to acknowledge Federico Muñoz Rojas from CICIMA for cluster support.
 
